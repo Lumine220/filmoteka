@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<a lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Book</title>
+</head>
+<body>
+    {% for movie in Movies %}
+        <a href={% url 'movie_detail' movie.id %}> Name: {{ movie.name }} <br> </body> </a>
+    {% endfor %}
+</body>
+</html>
